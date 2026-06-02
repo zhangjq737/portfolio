@@ -46,6 +46,8 @@ export interface SiteConfig {
   email: string;
   phone?: string;
   location?: string;
+  /** Path under /public for the avatar image (e.g. "/profile.jpg"). */
+  avatar: string;
   socials: SocialLink[];
 }
 

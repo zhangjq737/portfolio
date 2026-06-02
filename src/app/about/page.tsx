@@ -18,7 +18,7 @@ export default function AboutPage() {
     <Container>
       <div className="flex flex-col gap-6 sm:flex-row sm:items-start">
         <Image
-          src={asset("/profile.jpg")}
+          src={asset(site.avatar)}
           alt={site.name}
           width={120}
           height={120}

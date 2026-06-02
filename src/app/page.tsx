@@ -14,7 +14,7 @@ export default function Home() {
       {/* Hero */}
       <section className="flex flex-col gap-8 sm:flex-row sm:items-center">
         <Image
-          src={asset("/profile.jpg")}
+          src={asset(site.avatar)}
           alt={site.name}
           width={160}
           height={160}

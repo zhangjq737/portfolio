@@ -5,6 +5,20 @@ import type { Project } from "@/lib/types";
 //   2. set `demo: "/labs/<name>"` on the matching project below
 export const projects: Project[] = [
   {
+    slug: "plow-routes-demo",
+    title: "Thunder Bay Plow Routes (Live Open Data)",
+    summary:
+      "Consumes the City of Thunder Bay's public plow-route FeatureServer live — 4,374 real road segments, straight from a static page.",
+    description:
+      "A live demo consuming the City of Thunder Bay's authoritative plow-route ArcGIS FeatureServer — the same dataset behind the city's snowplow tracker — as GeoJSON over a CORS-enabled REST endpoint. No API key, no credits, no server: 4,374 road segments are paged in and styled by plow priority, with per-segment servicing details on click. It demonstrates consuming authoritative municipal GIS services directly in the browser, with heavier processing reserved for hosted services.",
+    category: "gis",
+    tags: ["ArcGIS REST", "FeatureServer", "GeoJSON", "MapLibre GL", "Open Data"],
+    period: "2026",
+    featured: true,
+    demo: "/labs/plows",
+    cover: "/projects/plow-routes-demo.jpg",
+  },
+  {
     slug: "cesium-3d-demo",
     title: "Cesium 3D Globe (Live Demo)",
     summary:

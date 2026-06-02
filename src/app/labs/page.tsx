@@ -9,6 +9,12 @@ export const metadata: Metadata = { title: "Labs" };
 // library is imported lazily inside useEffect so it never runs during SSR.
 const demos = [
   {
+    href: "/labs/plows",
+    title: "Thunder Bay Plow Routes (Real Open Data)",
+    description:
+      "Live consumption of the City of Thunder Bay's public plow-route FeatureServer — 4,374 road segments as GeoJSON, no key, no server.",
+  },
+  {
     href: "/labs/cesium",
     title: "Cesium 3D Globe",
     description:
