@@ -5,6 +5,31 @@ import type { Project } from "@/lib/types";
 //   2. set `demo: "/labs/<name>"` on the matching project below
 export const projects: Project[] = [
   {
+    slug: "cesium-3d-demo",
+    title: "Cesium 3D Globe (Live Demo)",
+    summary:
+      "An interactive 3D globe with extruded buildings — built with CesiumJS, the engine I used to move enterprise platforms from 2D to 3D.",
+    description:
+      "A live CesiumJS demo rendering extruded 3D building footprints over a real-world globe with lighting and OpenStreetMap imagery. It echoes the 2D-to-3D GIS transition I led in production with Cesium.js (metro-station models, 3D urban scenes). Cesium is loaded from a CDN with token-free imagery, so the whole 3D experience runs on a static host — no server, no Cesium Ion key.",
+    category: "gis",
+    tags: ["Cesium.js", "3D GIS", "WebGL", "TypeScript"],
+    period: "2026",
+    featured: true,
+    demo: "/labs/cesium",
+  },
+  {
+    slug: "buffer-demo",
+    title: "Client-Side Buffer Analysis (Live Demo)",
+    summary:
+      "Geoprocessing in the browser — Turf.js computes buffer polygons live, with no server.",
+    description:
+      "A live demo of in-browser geoprocessing: click to place a point, set a radius, and Turf.js computes the buffer polygon on the client. It demonstrates how real spatial analysis can ship on a fully static host, with heavier server-side geoprocessing (PostGIS, WPS, ArcGIS GP) reserved for separately-hosted services.",
+    category: "gis",
+    tags: ["Turf.js", "MapLibre GL", "Geoprocessing", "GeoJSON"],
+    period: "2026",
+    demo: "/labs/buffer",
+  },
+  {
     slug: "heatmap-demo",
     title: "Interactive Heatmap (Live Demo)",
     summary:

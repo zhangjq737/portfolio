@@ -9,6 +9,18 @@ export const metadata: Metadata = { title: "Labs" };
 // library is imported lazily inside useEffect so it never runs during SSR.
 const demos = [
   {
+    href: "/labs/cesium",
+    title: "Cesium 3D Globe",
+    description:
+      "CesiumJS scene with extruded 3D buildings over a real-world globe — token-free, CDN-loaded, static-hostable.",
+  },
+  {
+    href: "/labs/buffer",
+    title: "Buffer Analysis (Client-Side)",
+    description:
+      "Turf.js computes a buffer polygon live in the browser — geoprocessing with no server.",
+  },
+  {
     href: "/labs/heatmap",
     title: "Interactive Heatmap",
     description:
