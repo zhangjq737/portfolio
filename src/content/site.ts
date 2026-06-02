@@ -10,7 +10,7 @@ export const site: SiteConfig = {
   phone: "437-858-6239",
   location: "Thunder Bay, ON",
   // Avatar shown in the hero and About page.
-  avatar: "/photo_zjq.JPG",
+  avatar: "/headshot.jpeg",
   socials: [
     { label: "LinkedIn", href: "https://www.linkedin.com/in/jianqiuzhang" },
     { label: "Email", href: "mailto:zjqrich@gmail.com" },

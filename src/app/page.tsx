@@ -22,7 +22,7 @@ export default function Home() {
           className="h-32 w-32 shrink-0 rounded-full object-cover ring-1 ring-black/10 sm:h-40 sm:w-40 dark:ring-white/15"
         />
         <div className="max-w-2xl">
-          <p className="text-sm font-medium text-zinc-500">{site.role}</p>
+          {/* <p className="text-sm font-medium text-zinc-500">{site.role}</p> */}
           <h1 className="mt-3 text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
             {site.name}
           </h1>
@@ -30,18 +30,12 @@ export default function Home() {
             {site.tagline}
           </p>
           <div className="mt-8 flex gap-4 text-sm">
-          <Link
-            href="/projects"
-            className="rounded-full bg-foreground px-5 py-2.5 font-medium text-background transition-opacity hover:opacity-90"
-          >
-            View projects
-          </Link>
-          <a
-            href={`mailto:${site.email}`}
-            className="rounded-full border border-black/10 px-5 py-2.5 font-medium transition-colors hover:bg-black/5 dark:border-white/15 dark:hover:bg-white/10"
-          >
-            Get in touch
-          </a>
+            <Link
+              href="/projects"
+              className="rounded-full bg-foreground px-5 py-2.5 font-medium text-background transition-opacity hover:opacity-90"
+            >
+              View projects
+            </Link>
           </div>
         </div>
       </section>

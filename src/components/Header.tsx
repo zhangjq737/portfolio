@@ -7,6 +7,7 @@ import { site } from "@/content/site";
 
 // Add routes here as the site grows.
 const nav = [
+  { label: "Home", href: "/" },
   { label: "Projects", href: "/projects" },
   { label: "Labs", href: "/labs" },
   { label: "About", href: "/about" },
@@ -35,18 +36,16 @@ export function Header() {
                   key={item.href}
                   href={item.href}
                   aria-current={active ? "page" : undefined}
-                  className={`relative py-1 transition-colors ${
-                    active
+                  className={`relative py-1 transition-colors ${active
                       ? "text-foreground"
                       : "text-zinc-600 hover:text-foreground dark:text-zinc-400"
-                  }`}
+                    }`}
                 >
                   {item.label}
                   {/* Active-tab underline indicator */}
                   <span
-                    className={`absolute -bottom-px left-0 h-0.5 w-full rounded-full bg-foreground transition-opacity ${
-                      active ? "opacity-100" : "opacity-0"
-                    }`}
+                    className={`absolute -bottom-px left-0 h-0.5 w-full rounded-full bg-foreground transition-opacity ${active ? "opacity-100" : "opacity-0"
+                      }`}
                   />
                 </Link>
               );
