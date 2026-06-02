@@ -23,12 +23,13 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          # Match the Node/npm version the package-lock.json was generated with.
-          # npm 10 (Node 20) resolves optional @emnapi/* platform deps differently
-          # and breaks `npm ci`.
           node-version: 24
           cache: npm
-      - run: npm ci
+      # Use `npm install`, not `npm ci`: the package-lock.json was generated on
+      # macOS and omits Linux-only optional deps (@emnapi/* — the WASM fallback for
+      # Tailwind/lightningcss native binaries), which makes the strict `npm ci`
+      # check fail on the Linux runner. `npm install` resolves them for this platform.
+      - run: npm install --no-audit --no-fund
       - name: Build static site
         run: npm run build
         env:
