@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Container } from "@/components/Container";
+import { asset } from "@/lib/basePath";
 import { site } from "@/content/site";
 import {
   certifications,
@@ -17,7 +18,7 @@ export default function AboutPage() {
     <Container>
       <div className="flex flex-col gap-6 sm:flex-row sm:items-start">
         <Image
-          src="/profile.jpg"
+          src={asset("/profile.jpg")}
           alt={site.name}
           width={120}
           height={120}

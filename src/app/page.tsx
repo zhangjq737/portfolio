@@ -4,6 +4,7 @@ import { Container } from "@/components/Container";
 import { ProjectCard } from "@/components/ProjectCard";
 import { site } from "@/content/site";
 import { getFeatured } from "@/content/projects";
+import { asset } from "@/lib/basePath";
 
 export default function Home() {
   const featured = getFeatured();
@@ -13,7 +14,7 @@ export default function Home() {
       {/* Hero */}
       <section className="flex flex-col gap-8 sm:flex-row sm:items-center">
         <Image
-          src="/profile.jpg"
+          src={asset("/profile.jpg")}
           alt={site.name}
           width={160}
           height={160}
